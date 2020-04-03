@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown {
+  margin: 0.7em 0;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.dropdown option {
+ word-wrap: break-word;
+}
+.flex {
+  min-height: 66vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+margin: 1em 0;
+padding: 0.3em;
+width: 100em;
+border-radius: 10px;
+font-size: 1.1em;
+}
+
+.box.container {
+  background: rgb(232, 239, 121);
+  border: 5px solid #c4c4c4;
+    ;
+  }
+
+.box.confirmed {
+border: 1px solid #c4c4c4;
+background: #eb3a3a;
+  ;
+}
+
+.box.recovered {
+  border: 1px solid #c4c4c4;
+  background: #3adb47;
+    ;
+  }
+
+.box.deaths {
+    border: 1px solid #c4c4c4;
+    background: #ffffff;
+    }
+
+ @media screen and (min-width:900px) {
+      .flex {
+        flex-wrap: nowrap;
+      }
+
+      .box {
+        max-width: 400px;
+        line-height: 1.5;
+        font-size: 1em;
+        
+      }
+    }
