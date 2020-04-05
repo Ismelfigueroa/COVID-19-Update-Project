@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Form extends React.Component {
+export default class SignIn extends React.Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
@@ -36,6 +36,7 @@ export default class Form extends React.Component {
   render() {
     return (
       <form>
+              <h4>Sign up</h4>
         <input
           name="firstName"
           placeholder="First name"
@@ -72,7 +73,7 @@ export default class Form extends React.Component {
           onChange={e => this.handleChange(e)}
         />
         <br />
-        <button onClick={e => this.onSubmit(e)}>Submit</button>
+        <button onClick={e => this.onSubmit(e)}><h3>Sign up</h3></button>
       </form>
     );
   }

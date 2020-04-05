@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from "./logo.svg";
 import Form from './Form';
-import './style.css';
 import Axios from "axios";
+import Login from './Login';
 
 
 export default class App extends React.Component {
@@ -68,32 +67,44 @@ renderCountryOptions() {
     return (
       
     <div className="box container">
-      <h1>COVID-19 Update</h1>
+      <h1>COVID-19 Update 🧪</h1>
       
 <select className="dropdown" onChange={this.getCountryData}>
-  <option>Worldwide</option>
+  <option>Worldwide🌎</option>
   {this.renderCountryOptions()}
 </select>
     <div className="flex">
       <div className="box confirmed">
-        <h3>Confirmed cases</h3>
+        <h3>Confirmed 🤒</h3>
       <h4>{this.state.confirmed}</h4>
       </div>
       <div className="box recovered">
-      <h3>Recovered cases</h3>
+      <h3>Recovered 🤗</h3>
       <h4>{this.state.recovered}</h4>
       </div>
       <div className="box deaths">
-      <h3>Deaths cases</h3>
+      <h3>Deaths 😞</h3>
       <h4>{this.state.deaths}</h4>
       </div>
       </div>   
+      <div className="box container">
       <Form 
+   
       firstName="Ismel" 
       lastname="Figueroa"
       userName="ismelfigueroa"
       email="ismelfigueroa7@gamil.com"
       password="bootcamp"/>
+      
+      <div className="container1">
+      <Login
+       firstName="Ismel" 
+       lastname="Figueroa"
+       userName="ismelfigueroa"
+       email="ismelfigueroa7@gamil.com"
+       password="bootcamp"/>
+       </div>
+     </div>
     </div>
     );
   }
