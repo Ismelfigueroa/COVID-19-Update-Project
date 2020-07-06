@@ -67,7 +67,7 @@ renderCountryOptions() {
     return (
       
     <div className="box container">
-      <h1>COVID-19 UPDATE 🧪</h1>
+      <h1>COVID-19 TRACKER 🧪</h1>
       
 <select className="dropdown" onChange={this.getCountryData}>
   <option>Worldwide🌎</option>
