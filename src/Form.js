@@ -6,11 +6,11 @@ export default class SignIn extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
   state = {
-    firstName: "",
-    lastName: "",
-    username: "",
-    email: "",
-    password: "",
+    firstName: "Ismel",
+    lastName: "Figueroa",
+    username: "Ismelfigueroa",
+    email: "ismelfigueroa7@gmail.com",
+    password: "2020",
   };
 
   handleChange = e => {

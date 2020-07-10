@@ -70,7 +70,7 @@ renderCountryOptions() {
       <h1>COVID-19 TRACKER 🧪</h1>
       
 <select className="dropdown" onChange={this.getCountryData}>
-  <option>Worldwide🌎</option>
+  <option>Worldwide 🌎</option>
   {this.renderCountryOptions()}
 </select>
     <div className="flex">
