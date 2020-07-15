@@ -83,7 +83,7 @@ renderCountryOptions() {
       <h4>{this.state.recovered}</h4>
       </div>
       <div className="box deaths">
-      <h3>Deaths 😞</h3>
+      <h3>Deaths cases 😞</h3>
       <h4>{this.state.deaths}</h4>
       </div>
       </div>   
